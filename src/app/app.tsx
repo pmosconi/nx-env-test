@@ -6,7 +6,7 @@ import NxWelcome from './nx-welcome';
 export function App() {
   return (
     <div>
-      <NxWelcome title="nx-env-test" />
+      <NxWelcome title={process.env.NX_TASK_TARGET_PROJECT || 'process.env.NX_TASK_TARGET_PROJECT Not Found'} />
     </div>
   );
 }
